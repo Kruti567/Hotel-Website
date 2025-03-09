@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Tariff - Luxury Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/hotel-logo.png" alt="Luxury Hotel Logo">
+                <span>Luxury Hotel</span>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#gallery">Gallery</a></li>
+                    <li><a href="index.html#amenities">Amenities</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li class="tariff-btn"><a href="tariff.html">Tariff</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="tariff-page">
+        <section class="booking-dates">
+            <div class="container">
+                <h2>Check Availability</h2>
+                <p>Select your check-in and check-out dates to view our best rates</p>
+                
+                <form class="date-selection-form">
+                    <div class="date-row">
+                        <div class="form-group">
+                            <label for="check-in">Check-in Date</label>
+                            <input type="date" id="check-in" name="check-in" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="check-out">Check-out Date</label>
+                            <input type="date" id="check-out" name="check-out" required>
+                        </div>
+                    </div>
+                    
+                    <div class="guest-counter-row">
+                        <div class="form-group guest-counter">
+                            <label>Adults</label>
+                            <div class="counter-container">
+                                <button type="button" class="counter-btn minus-btn"><i class="fas fa-minus"></i></button>
+                                <input type="number" name="adults" id="adults" value="2" min="1" max="10" readonly>
+                                <button type="button" class="counter-btn plus-btn"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group guest-counter">
+                            <label>Children</label>
+                            <div class="counter-container">
+                                <button type="button" class="counter-btn minus-btn"><i class="fas fa-minus"></i></button>
+                                <input type="number" name="children" id="children" value="0" min="0" max="6" readonly>
+                                <button type="button" class="counter-btn plus-btn"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="cta-button" id="check-availability-btn">Check Availability</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="room-showcase">
+            <div class="container">
+                <h2>Explore our Rooms</h2>
+                <p>Discover our luxurious accommodations designed for your comfort</p>
+                
+                <div class="room-grid">
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="images/deluxe-room.jpg" alt="Deluxe Room">
+                            <div class="room-price">₹8,500 <span>per night</span></div>
+                        </div>
+                        <div class="room-details">
+                            <h3>Deluxe Room</h3>
+                            <p>Spacious room with modern amenities and city views.</p>
+                            <ul class="room-features">
+                                <li><i class="fas fa-user-friends"></i> 2 Adults, 1 Child</li>
+                                <li><i class="fas fa-bed"></i> King Bed</li>
+                                <li><i class="fas fa-wifi"></i> Free WiFi</li>
+                            </ul>
+                            <button class="room-btn">Book Now</button>
+                        </div>
+                    </div>
+                    
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="images/premium-room.jpg" alt="Premium Room">
+                            <div class="room-price">₹12,000 <span>per night</span></div>
+                        </div>
+                        <div class="room-details">
+                            <h3>Premium Suite</h3>
+                            <p>Elegant suite with separate living area and premium amenities.</p>
+                            <ul class="room-features">
+                                <li><i class="fas fa-user-friends"></i> 2 Adults, 2 Children</li>
+                                <li><i class="fas fa-bed"></i> King Bed + Sofa Bed</li>
+                                <li><i class="fas fa-bath"></i> Jacuzzi</li>
+                            </ul>
+                            <button class="room-btn">Book Now</button>
+                        </div>
+                    </div>
+                    
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="images/executive-suite.jpg" alt="Executive Suite">
+                            <div class="room-price">₹18,000 <span>per night</span></div>
+                        </div>
+                        <div class="room-details">
+                            <h3>Executive Suite</h3>
+                            <p>Luxurious suite with panoramic views and exclusive services.</p>
+                            <ul class="room-features">
+                                <li><i class="fas fa-user-friends"></i> 4 Adults</li>
+                                <li><i class="fas fa-bed"></i> 2 King Beds</li>
+                                <li><i class="fas fa-concierge-bell"></i> Butler Service</li>
+                            </ul>
+                            <button class="room-btn">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-columns">
+            <!-- Left Column - Info -->
+            <div class="footer-info-column">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <img src="images/hotel-logo.png" alt="Luxury Hotel Logo">
+                        <span>Luxury Hotel</span>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>Contact Us</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Luxury Avenue, Mumbai</p>
+                        <p><i class="fas fa-phone"></i> +91 (22) 1234-5678</p>
+                        <p><i class="fas fa-envelope"></i> info@luxuryhotel.com</p>
+                    </div>
+                    <div class="footer-social">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column - Map -->
+            <div class="footer-map-column">
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609823277!2d72.74109995709657!3d19.08219783958221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1635176329254!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Luxury Hotel. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

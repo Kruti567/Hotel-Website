@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Hotel & Resort</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/hotel-logo.png" alt="Luxury Hotel Logo">
+                <span>Luxury Hotel</span>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#amenities">Amenities</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li class="tariff-btn"><a href="tariff.html">Tariff</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <img src="images/hotel-exterior1.jpg" alt="Luxury Hotel Exterior">
+        </div>
+        <div class="hero-content">
+            <h1>Welcome to Luxury Hotel</h1>
+            <p>Experience luxury and comfort in the heart of the city</p>
+        </div>
+    </section>
+    <section id="gallery" class="gallery">
+        <h2>Our Gallery</h2>
+        <p>Take a visual tour of our beautiful hotel and facilities</p>
+        <div class="gallery-container">
+            <div class="gallery-scroll-container" id="gallery-scroll">
+                <!-- Original cards -->
+                <div class="gallery-card">
+                    <div class="gallery-image-container">
+                        <img src="images/hotel-room1.jpg" alt="Luxury Room" class="gallery-image">
+                    </div>
+                    <div class="gallery-card-content">
+                        <h3>Luxury Rooms</h3>
+                        <p>Experience comfort in our elegantly designed rooms</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-image-container">
+                        <img src="images/hotel-lobby.jpg" alt="Hotel Lobby" class="gallery-image">
+                    </div>
+                    <div class="gallery-card-content">
+                        <h3>Grand Lobby</h3>
+                        <p>Our welcoming lobby sets the tone for your luxurious stay</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-image-container">
+                        <img src="images/hotel-pool.jpg" alt="Swimming Pool" class="gallery-image">
+                    </div>
+                    <div class="gallery-card-content">
+                        <h3>Swimming Pool</h3>
+                        <p>Relax and unwind in our pristine swimming pool</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-image-container">
+                        <img src="images/hotel-restaurant.jpg" alt="Restaurant" class="gallery-image">
+                    </div>
+                    <div class="gallery-card-content">
+                        <h3>Fine Dining</h3>
+                        <p>Savor exquisite cuisine at our in-house restaurant</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-image-container">
+                        <img src="images/hotel-spa.jpg" alt="Spa" class="gallery-image">
+                    </div>
+                    <div class="gallery-card-content">
+                        <h3>Luxury Spa</h3>
+                        <p>Indulge in rejuvenating treatments at our spa</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-image-container">
+                        <img src="images/hotel-view.jpg" alt="Hotel View" class="gallery-image">
+                    </div>
+                    <div class="gallery-card-content">
+                        <h3>Scenic Views</h3>
+                        <p>Enjoy breathtaking views from our hotel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-navigation">
+            <button class="gallery-nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="gallery-nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+    <section id="amenities" class="amenities">
+        <h2>Hotel Amenities</h2>
+        <p>Enjoy our world-class facilities and services</p>
+        <div class="amenities-container">
+            <div class="amenity-card">
+                <div class="amenity-icon">
+                    <i class="fas fa-swimming-pool"></i>
+                </div>
+                <div class="amenity-content">
+                    <h3>Swimming Pool</h3>
+                    <p>Relax in our temperature-controlled swimming pool with a stunning view of the city skyline. Open daily from 7 AM to 10 PM.</p>
+                </div>
+            </div>
+            
+            <div class="amenity-card">
+                <div class="amenity-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <div class="amenity-content">
+                    <h3>Fine Dining</h3>
+                    <p>Experience culinary excellence at our award-winning restaurant featuring international cuisine prepared by our master chefs.</p>
+                </div>
+            </div>
+            
+            <div class="amenity-card">
+                <div class="amenity-icon">
+                    <i class="fas fa-spa"></i>
+                </div>
+                <div class="amenity-content">
+                    <h3>Luxury Spa</h3>
+                    <p>Rejuvenate your body and mind with our premium spa treatments, including massages, facials, and aromatherapy sessions.</p>
+                </div>
+            </div>
+            
+            <div class="amenity-card">
+                <div class="amenity-icon">
+                    <i class="fas fa-dumbbell"></i>
+                </div>
+                <div class="amenity-content">
+                    <h3>Fitness Center</h3>
+                    <p>Stay fit with our state-of-the-art fitness equipment and personal trainers available upon request for customized workout plans.</p>
+                </div>
+            </div>
+            
+            <div class="amenity-card">
+                <div class="amenity-icon">
+                    <i class="fas fa-wifi"></i>
+                </div>
+                <div class="amenity-content">
+                    <h3>Free Wi-Fi</h3>
+                    <p>Stay connected with high-speed internet throughout the hotel, perfect for both business and leisure travelers.</p>
+                </div>
+            </div>
+            
+            <div class="amenity-card">
+                <div class="amenity-icon">
+                    <i class="fas fa-concierge-bell"></i>
+                </div>
+                <div class="amenity-content">
+                    <h3>24/7 Room Service</h3>
+                    <p>Enjoy delicious meals and services in the comfort of your room at any time of day or night with our dedicated staff.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <div class="about-card">
+            <div class="about-image-background">
+                <img src="images/hotel-exterior.jpg" alt="Hotel Exterior">
+            </div>
+            <div class="about-overlay">
+                <div class="about-text">
+                    <h3>Our Story</h3>
+                    <p>Luxury Hotel has been providing exceptional hospitality since 1995. Located in the heart of the city, our hotel combines elegant design with modern comfort to create an unforgettable experience for our guests.</p>
+                    <p>Our dedicated staff is committed to providing personalized service to ensure your stay exceeds expectations. Whether you're visiting for business or leisure, Luxury Hotel offers the perfect blend of luxury, comfort, and convenience.</p>
+                    <p>We pride ourselves on attention to detail and creating memorable experiences for each guest who walks through our doors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <h2>Guest Reviews</h2>
+        <p>What our guests say about their experience</p>
+        <div class="reviews-container">
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-avatar">
+                        <img src="images/avatar1.jpg" alt="Guest Avatar">
+                    </div>
+                    <div class="review-info">
+                        <h3>Sarah Johnson</h3>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <p>"Our stay at Luxury Hotel exceeded all expectations. The staff was incredibly attentive, the room was immaculate, and the amenities were top-notch. We particularly enjoyed the spa services and the fine dining restaurant. Will definitely return!"</p>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-avatar">
+                        <img src="images/avatar2.jpg" alt="Guest Avatar">
+                    </div>
+                    <div class="review-info">
+                        <h3>Michael Chen</h3>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <p>"As a business traveler, I appreciate efficiency and comfort. Luxury Hotel delivered on both fronts. The high-speed Wi-Fi was reliable, the fitness center was well-equipped, and the room service was prompt. The central location made my meetings easily accessible."</p>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-avatar">
+                        <img src="images/avatar3.jpg" alt="Guest Avatar">
+                    </div>
+                    <div class="review-info">
+                        <h3>Priya Sharma</h3>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <p>"We celebrated our anniversary at Luxury Hotel and it was magical! The staff arranged a special dinner on our balcony overlooking the city. The attention to detail was impressive - from the rose petals in our room to the personalized welcome note. Truly a memorable experience."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-columns">
+            <!-- Left Column - Map -->
+            <div class="footer-map-column">
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609823277!2d72.74109995709657!3d19.08219783958221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1635176329254!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+            
+            <!-- Right Column - Content -->
+            <div class="footer-info-column">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <img src="images/hotel-logo.png" alt="Luxury Hotel Logo">
+                        <span>Luxury Hotel</span>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>Contact Us</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Luxury Avenue, Mumbai</p>
+                        <p><i class="fas fa-phone"></i> +91 (22) 1234-5678</p>
+                        <p><i class="fas fa-envelope"></i> info@luxuryhotel.com</p>
+                    </div>
+                    <div class="footer-social">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Luxury Hotel. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
